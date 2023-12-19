@@ -91,9 +91,12 @@ class Robust_Identification():
         # Instantiate the Identified Set
         ID_set = np.zeros((grid, grid, grid))
 
-        # For each (β, δ, η) in the domain, at this stage we are still developing a method
+        # For each (β, δ, η) in the domain. At this stage we are still developing a method
         # to avoid searching over the entire space. This part is inefficient because 
         # this algorithm spends most of the time in points not identified. 
+        # Moreover, Python for loops are known to be extremely slow. 
+        # We are planning to implement this function in C++/Cython.
+        
         for idx_β in range(0, grid):
             for idx_δ in range(0, grid):
                 for idx_η in range(0, grid):

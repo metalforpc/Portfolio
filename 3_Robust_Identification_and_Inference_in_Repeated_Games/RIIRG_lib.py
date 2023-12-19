@@ -3,18 +3,18 @@
 
 ### This is a very simple example of code for the paper  
 ### "Robust Identification and Inference in Repeated Games" 
-### The full code will be available when we circulate the working paper. I kept
-### this code simple so that can be run with a simple installation of Python.
+### The full code will be available when we circulate the working paper.
 
 ### This code illustrate an example of identification routine to identify a repeated 
 ### Prisoner's Dilemma.
 
-### Import Section, also cython elements to speed up the identification
-### function
+### Import Section
 import numpy as np
 
 from scipy.stats import uniform
 from scipy.optimize import linprog
+
+# Main class
 
 class Robust_Identification():
     

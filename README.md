@@ -16,8 +16,11 @@ rules exhibit discontinuities. The interplay of these factors have an impact on 
 The Matlab codes are the original one used for the thesis. Julia codes instead are a re-implementation that allows for Parallelization and Interpolation of the Value Function of the model. The Julia Code is a work in progress, I'm moving the code there since I'm planning to do an estimation exercise of the model. 
 
 ## 3. Robust Identification and Inference in Repeated Games
-This is a joint work with Cristina Gualdani, Niccolò Lomys and Lorenzo Magnolfi. It's a sample code extracted and simplified from the Python Library I'm developing for the estimation procedure. Unfortunately the working paper has not circulated yet, therefore I decided to publish an example of estimation of a repeated Prisoner's Dilemma.
 
+Abstract: We study identification in repeated games with imperfect public monitoring under no assumptions on equilibrium selection. We leverage the restrictions on equilibrium payoffs in Awaya and Krishna (2019) to construct a law of large numbers that implies bounds on payoff parameters, the discount factor, and monitoring quality. Our method is computationally tractable in generic games. We illustrate the identified sets of parameters in simulations, highlighting the trade-off between maintaining strong assumptions and the tightness of the identified set.
+
+This work is a collaboration with Cristina Gualdani, Niccolò Lomys, and Lorenzo Magnolfi. It features a sample code extracted and simplified from the Python library I am currently developing for the estimation procedure. For illustrative purposes, I have chosen to showcase the estimation of a repeated Prisoner's Dilemma. The essential functions are included in the "RIIRG_lib.py" file, while the usage of the method is demonstrated in the "main.ipynb" notebook.
+ 
 ## 4. Data Analysis
 This section contains some data tasks example from "predoc.org". It contains the exercise and the code. In the "Data Manipulation Medicare Advantage" exercise I show some code in R that involves a simple data cleaning and dataset creation.
 

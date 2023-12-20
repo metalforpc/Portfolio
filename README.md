@@ -5,7 +5,8 @@ This GitHub contains some personal coding projects. There are several example of
 Here is a little description of the folders in the repository.
 
 ## 1. Bachelor Thesis
-Brief translation of the work
+
+Brief translation of the work, WIP.
 
 ## 2. Master Thesis
 Title: Skill Heterogeneity, Idiosyncratic Risk, and Labor Market Fluctuations. 
@@ -28,14 +29,20 @@ The "Economic Analysis" exercise instead is more involved, and requires to use a
 
 ## 5. ANN and Function Approximation
 
-This folder contains some example of code I produced about Neural Networks for Function Approximation.
+This folder contains some example of code I produced about Neural Networks for Function Approximation. 
+
+- The file "Ramsey_Model_ANN_Approx.ipynb" is a replication of the paper "Deep learning for solving dynamic economic models, Maliar et al. 2021" in a simpler setting. 
+
+- The file "Static_Unconstrained_Optimization.ipynb" is instead an example of how one can solve for a Value function of an optimization problem by means of ANN. The advantage of doing this is that, instead of solving multiple optimiziation problem for each parameter, one can sample points from the parameter space and solve the entire optimization problem in that space.
 
 ## 6. Computational Economics
 
-This folder contains Value Function Approximation performed with Julia. There is the classic Cake Eating Problem. The first file instead is a routine that solves the Brock-Mirman model with Value Function Interpolation and Quadrature to approximate expectations.
+This folder contains some other example of code in Julia. There is the standard Cake Eating Problem solved via VFI. Instead the file "Brock_Mirman_Interp_Quadrat_Julia.ipynb" is a routine that solves the Brock-Mirman model via VFI with Cubic Spline Interpolation and Quadrature to approximate expectations.
 
 ## 7. Other Projects
 
-This last folder containts other projects I think may be interesting.
+This last folder contains other projects that I think may be interesting. It includes sample codes from my previous exams:
 
+- Derivatives/Option Pricing: This folder contains a Matlab file created for the take-home exam, in which I had to perform numerical simulation and pricing of a 'down-and-out' put option. The folder includes the Matlab script and the exercise's text."
 
+- Econometrics_Problem_Set: Is a collection of R script produced for various Problem Sets.

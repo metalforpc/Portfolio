@@ -54,7 +54,7 @@ plot(agrid, c11(:,2),'LineWidth',2,'color',"#FF0000")
 plot(agrid, c12(:,1),'LineWidth',2,'color',"#8293ff")
 plot(agrid, c12(:,2),'LineWidth',2,'color',"#0023ff")
 xlabel('$a$', 'Interpreter', 'latex', 'FontSize', 16)
-ylabel('${c}(a,\varepsilon)$', 'Interpreter', 'latex', 'FontSize',16)
+ylabel('${c}_t(a_t,\varepsilon_t)$', 'Interpreter', 'latex', 'FontSize',16)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -74,8 +74,8 @@ plot(agrid, ap11(:,1),'DisplayName','J = 1, Low State' ,'LineWidth',2,'color',"#
 plot(agrid, ap11(:,2),'DisplayName','J = 1, High State','LineWidth',2,'color',"#FF0000")
 plot(agrid, ap12(:,1),'DisplayName','J = 2, Low State' ,'LineWidth',2,'color',"#8293ff")
 plot(agrid, ap12(:,2),'DisplayName','J = 2, High State','LineWidth',2,'color',"#0023ff")
-xlabel('$a$', 'Interpreter', 'latex', 'FontSize', 16)
-ylabel("${a'}(a, \varepsilon)$", 'Interpreter', 'latex', 'FontSize',16)
+xlabel('$a_t$', 'Interpreter', 'latex', 'FontSize', 16)
+ylabel('${a^j}_{t+1}(a_t,\varepsilon_t)$', 'Interpreter', 'latex', 'FontSize',16)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -95,7 +95,7 @@ plot(agrid, p11(:,2),'DisplayName','J = 1, High State','LineWidth',2,'color',"#F
 plot(agrid, p12(:,1),'DisplayName','J = 2, Low State' ,'LineWidth',2,'color',"#8293ff")
 plot(agrid, p12(:,2),'DisplayName','J = 2, High State','LineWidth',2,'color',"#0023ff")
 yline(0.5,'--','DisplayName','50% Probability')
-xlabel('$a$', 'Interpreter', 'latex', 'FontSize', 16)
+xlabel('$a_t$', 'Interpreter', 'latex', 'FontSize', 16)
 ylabel('$\theta$', 'Interpreter', 'latex', 'FontSize',16)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
@@ -145,8 +145,8 @@ hold on
 % plot(agrid, v11(:,shockstate),'--','DisplayName','J = 1','LineWidth',2,'color'    ,"#FF0000")
 % plot(agrid, v12(:,shockstate) + phi,'--','DisplayName','J = 2' ,'LineWidth',2,'color',"#0023ff")
 plot(agrid, V_1,'DisplayName','$V$','LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel('$V(a,\varepsilon = \varepsilon^L)$','Interpreter','latex','FontSize',14)
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$V(a_t,\varepsilon_t = \varepsilon^L)$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -163,9 +163,9 @@ subplot(2,2,2)
 hold on
 % plot(agrid, c11(:,shockstate),'--','DisplayName','J = 1',   'LineWidth',2,'color',"#FF0000")
 % plot(agrid, c12(:,shockstate),'--','DisplayName','J = 2' ,'LineWidth',2,'color'  ,"#0023ff")
-plot(agrid, C_1,'DisplayName','$c$','LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel('$c(a,\varepsilon = \varepsilon^L)$','Interpreter','latex','FontSize',14)
+plot(agrid, C_1,'DisplayName','$c_t$','LineWidth',2,'color',"k")
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$c(a_t,\varepsilon_t = \varepsilon^L)$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -180,12 +180,12 @@ hold off
 % Asset Function
 subplot(2,2,3)
 hold on
-plot(agrid, agrid,'--','DisplayName','45° line','LineWidth',2)
+plot(agrid, agrid,'--','DisplayName','45 line','LineWidth',2)
 %plot(agrid, ap11(:,shockstate),'--','DisplayName','J = 1',   'LineWidth',2,'color',"#FF0000")
 %plot(agrid, ap12(:,shockstate),'--','DisplayName','J = 2' ,'LineWidth',2,'color'  ,"#0023ff")
-plot(agrid, AP_1,'DisplayName',"$a'$",'LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel("$a'(a,\varepsilon = \varepsilon^L)$",'Interpreter','latex','FontSize',14)
+plot(agrid, AP_1,'DisplayName','$a_{t+1}$','LineWidth',2,'color',"k")
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$a_{t+1}(a_t,\varepsilon_t = \varepsilon^L)$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -203,8 +203,8 @@ set(hl, 'Interpreter','latex')
 subplot(2,2,4)
 hold on
 plot(agrid, argmax_1,'LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel('$j$','Interpreter','latex','FontSize',14)
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$o$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -251,8 +251,8 @@ hold on
 % plot(agrid, v11(:,shockstate),'--','DisplayName','J = 1','LineWidth',2,'color'    ,"#FF0000")
 % plot(agrid, v12(:,shockstate) + phi,'--','DisplayName','J = 2' ,'LineWidth',2,'color',"#0023ff")
 plot(agrid, V_2,'DisplayName','$V$','LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel('$V(a,\varepsilon = \varepsilon^H)$','Interpreter','latex','FontSize',14)
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$V(a_t,\varepsilon_t = \varepsilon^H)$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -272,8 +272,8 @@ hold on
 % plot(agrid, c11(:,shockstate),'--','DisplayName','J = 1',   'LineWidth',2,'color',"#FF0000")
 % plot(agrid, c12(:,shockstate),'--','DisplayName','J = 2' ,'LineWidth',2,'color'  ,"#0023ff")
 plot(agrid, C_2,'DisplayName','$c_t$','LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel('$c(a,\varepsilon = \varepsilon^H)$','Interpreter','latex','FontSize',14)
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$c(a_t,\varepsilon_t = \varepsilon^H)$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -290,12 +290,12 @@ set(hl, 'Interpreter','latex')
 % Asset Function
 subplot(2,2,3)
 hold on
-plot(agrid, agrid,'--','DisplayName','45° line','LineWidth',2)
+plot(agrid, agrid,'--','DisplayName','45 line','LineWidth',2)
 % plot(agrid, ap11(:,shockstate),'--','DisplayName','J = 1',   'LineWidth',2,'color',"#FF0000")
 % plot(agrid, ap12(:,shockstate),'--','DisplayName','J = 2' ,'LineWidth',2,'color'  ,"#0023ff")
-plot(agrid, AP_2,'DisplayName',"$a'$",'LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel("$a'(a,\varepsilon = \varepsilon^H)$",'Interpreter','latex','FontSize',14)
+plot(agrid, AP_2,'DisplayName','$a_{t+1}$','LineWidth',2,'color',"k")
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$a_{t+1}(a_t,\varepsilon_t = \varepsilon^H)$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -313,8 +313,8 @@ set(hl, 'Interpreter','latex')
 subplot(2,2,4)
 hold on
 plot(agrid, argmax_2,'LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel('$j$','Interpreter','latex','FontSize',14)
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$o$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -330,12 +330,12 @@ hold off
 figure(5)
 subplot(1,2,1)
 hold on
-plot(agrid, agrid,'--','DisplayName','45° line','LineWidth',2)
+plot(agrid, agrid,'--','DisplayName','45 line','LineWidth',2)
 %plot(agrid, ap11(:,shockstate),'--','DisplayName','J = 1',   'LineWidth',2,'color',"#FF0000")
 %plot(agrid, ap12(:,shockstate),'--','DisplayName','J = 2' ,'LineWidth',2,'color'  ,"#0023ff")
-plot(agrid, AP_1,'DisplayName',"$a'$",'LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel("$a'(a,\varepsilon = \varepsilon^L)$",'Interpreter','latex','FontSize',14)
+plot(agrid, AP_1,'DisplayName','$a_{t+1}$','LineWidth',2,'color',"k")
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$a_{t+1}(a_t,\varepsilon_t = \varepsilon^L)$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...
@@ -351,12 +351,12 @@ set(hl, 'Interpreter','latex')
 
 subplot(1,2,2)
 hold on
-plot(agrid, agrid,'--','DisplayName','45° line','LineWidth',2)
+plot(agrid, agrid,'--','DisplayName','45 line','LineWidth',2)
 % plot(agrid, ap11(:,shockstate),'--','DisplayName','J = 1',   'LineWidth',2,'color',"#FF0000")
 % plot(agrid, ap12(:,shockstate),'--','DisplayName','J = 2' ,'LineWidth',2,'color'  ,"#0023ff")
-plot(agrid, AP_2,'DisplayName',"$a'$",'LineWidth',2,'color',"k")
-xlabel('$a$','Interpreter','latex','FontSize',14); 
-ylabel("$a'(a,\varepsilon = \varepsilon^H)$",'Interpreter','latex','FontSize',14)
+plot(agrid, AP_2,'DisplayName','$a_{t+1}$','LineWidth',2,'color',"k")
+xlabel('$a_t$','Interpreter','latex','FontSize',14); 
+ylabel('$a_{t+1}(a_t,\varepsilon_t = \varepsilon^H)$','Interpreter','latex','FontSize',14)
 ax = gca;
 set(gca,'TickLabelInterpreter', 'latex');
     set(gca,...

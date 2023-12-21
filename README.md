@@ -2,7 +2,7 @@
 
 This GitHub contains some personal coding projects. There are several example of code produced in different programming languages, main are: Python, Matlab, R, Julia. The repository is still work in progress so some section may be not yet complete.
 
-Here is a little description of the folders in the repository.
+Here is a little description of the folders in the repository. 
 
 ## 1. Bachelor Thesis
 
@@ -25,7 +25,7 @@ This work is a collaboration with Cristina Gualdani, Niccolò Lomys, and Lorenzo
 ## 4. Data Analysis
 This section contains some data tasks example from "predoc.org". It contains the exercise and the code. In the "Data Manipulation Medicare Advantage" exercise I show some code in R that involves a simple data cleaning and dataset creation.
 
-The "Economic Analysis" exercise instead is more involved, and requires to use a subsample from "U.S. Current Population Survey" to produce an answer to the question of how hourly wages (“wage”) and labor force participation (“lfp”) evolved for skilled and unskilled workers since 1976.
+The "Economic Analysis" exercise instead is more involved, and requires to use a subsample from "U.S. Current Population Survey" to produce an answer to the question of how hourly wages (“wage”) and labor force participation (“lfp”) evolved for skilled and unskilled workers since 1976. WIP
 
 ## 5. ANN and Function Approximation
 
@@ -45,4 +45,4 @@ This last folder contains other projects that I think may be interesting. It inc
 
 - Derivatives/Option Pricing: This folder contains a Matlab file created for the take-home exam, in which I had to perform numerical simulation and pricing of a 'down-and-out' put option. The folder includes the Matlab script and the exercise's text."
 
-- Econometrics_Problem_Set: Is a collection of R script produced for various Problem Sets.
+- Econometrics_Problem_Set: Is a collection of R script produced for various Problem Sets. WIP

@@ -1,24 +1,23 @@
 # Antonio Cozzolino Portfolio
 
-This GitHub contains some personal coding projects. There are several example of code produced in different programming languages, main are: Python, Matlab, R, Julia. The repository is still work in progress so some section may be not yet complete.
+This GitHub repository contains personal sample codes written in various programming languages, primarily including Python, Matlab, R, and Julia. The repository is still a work in progress, so some sections may not be complete yet.
 
-Here is a little description of the folders in the repository. 
+Here is a brief description of the folders within the repository:
 
 ## 1. Bachelor Thesis
 
 Brief translation of the work, WIP.
 
 ## 2. Master Thesis
-Title: Skill Heterogeneity, Idiosyncratic Risk, and Labor Market Fluctuations. 
+**Title**: Skill Heterogeneity, Idiosyncratic Risk, and Labor Market Fluctuations. 
 
-Abstract: This thesis studies the effects of skill heterogeneity and non-pecuniary motives on job selection at an aggregate level. I formulate a Dynamic Discrete Choice Model that considers households’ choices related to occupation, consumption, and saving. Within this framework, agents’ decision
-rules exhibit discontinuities. The interplay of these factors have an impact on job mobility patterns, leading to shifts in labor supply and aggregate movements similar to TFP shocks. 
+**Abstract**: This thesis proposes a theoretical framework to study the relationship between skill heterogeneity, income uncertainty, and non-pecuniary motivations influencing occupational choices. I develop a dynamic discrete choice model of occupational choice where workers differ by productivity, and are subject to income uncertainty and taste shocks. I use this model to study the behavior of individuals and run some numerical simulations to assess the effects of such heterogeneity on the economy. The main finding is that financially disadvantaged households prioritize jobs that maximize income and align with their comparative advantage. In contrast, more rich households are willing to sacrifice potential earnings for jobs that provide greater satisfaction. At an aggregate level, heterogeneity in preference for occupations leads to movements in effective labor supply that affect aggregate labor productivity.
 
 The Matlab codes are the original one used for the thesis. Julia codes instead are a re-implementation that allows for Parallelization and Interpolation of the Value Function of the model. The Julia Code is a work in progress, I'm moving the code there since I'm planning to do an estimation exercise of the model. 
 
 ## 3. Robust Identification and Inference in Repeated Games
 
-Abstract: We study identification in repeated games with imperfect public monitoring under no assumptions on equilibrium selection. We leverage the restrictions on equilibrium payoffs in Awaya and Krishna (2019) to construct a law of large numbers that implies bounds on payoff parameters, the discount factor, and monitoring quality. Our method is computationally tractable in generic games. We illustrate the identified sets of parameters in simulations, highlighting the trade-off between maintaining strong assumptions and the tightness of the identified set.
+**Abstract**: We study identification in repeated games with imperfect public monitoring under no assumptions on equilibrium selection. We leverage the restrictions on equilibrium payoffs in Awaya and Krishna (2019) to construct a law of large numbers that implies bounds on payoff parameters, the discount factor, and monitoring quality. Our method is computationally tractable in generic games. We illustrate the identified sets of parameters in simulations, highlighting the trade-off between maintaining strong assumptions and the tightness of the identified set.
 
 This work is a collaboration with Cristina Gualdani, Niccolò Lomys, and Lorenzo Magnolfi. It features a sample code extracted and simplified from the Python library I am currently developing for the estimation procedure. For illustrative purposes, I have chosen to showcase the estimation of a repeated Prisoner's Dilemma. The essential functions are included in the "RIIRG_lib.py" file, while the usage of the method is demonstrated in the "main.ipynb" notebook.
  

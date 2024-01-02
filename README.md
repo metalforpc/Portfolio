@@ -26,6 +26,8 @@ This section contains some data tasks example from "predoc.org". It contains the
 
 The "Economic Analysis" exercise instead is more involved, and requires to use a subsample from "U.S. Current Population Survey" to produce an answer to the question of how hourly wages (“wage”) and labor force participation (“lfp”) evolved for skilled and unskilled workers since 1976. WIP
 
+You may also want to check the file "Credit_Risk_KPMG_Challenge.ipynb" in the folder "5. ANN and Function Approximation" for another data related code.
+
 ## 5. ANN and Function Approximation
 
 This folder contains some example of code I produced about Neural Networks for Function Approximation. 
@@ -33,6 +35,8 @@ This folder contains some example of code I produced about Neural Networks for F
 - The file "Ramsey_Model_ANN_Approx.ipynb" is a replication of the paper "Deep learning for solving dynamic economic models, Maliar et al. 2021" in a simpler setting. 
 
 - The file "Static_Unconstrained_Optimization.ipynb" is instead an example of how one can solve for a Value function of an optimization problem by means of ANN. The advantage of doing this is that, instead of solving multiple optimiziation problem for each parameter, one can sample points from the parameter space and solve the entire optimization problem in that space.
+
+- The file "Credit_Risk_KPMG_Challenge.ipynb" is associated with a university project we conducted in collaboration with KPMG. The task was to investigate the application of Machine Learning in the credit industry. My team and I decided to present a comparison of the performance of Logistic Regression, Decision Tree, and Artificial Neural Networks in predicting defaults. Attached to the code are the dataset used and the corresponding presentation.
 
 ## 6. Computational Economics
 
